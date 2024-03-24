@@ -1,0 +1,51 @@
+<style>
+    table{
+        margin: 25px;
+        padding: 20px;
+        width: 95%;
+    }
+    .th-table{
+        color: white;
+        background-color: black;
+    }
+    .th-table2{
+        background-color: #0080002b;
+    }
+    .table-body:hover >td{
+        background-color: blue;
+        color: white;
+    }
+</style>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th class="th-table">Firstname</th>
+      <th class="th-table">lastname</th>
+      <th class="th-table">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of data" class="table-body">
+      <td>{{ person.firstname }}</td>
+      <td>{{ person.lastname }}</td>
+      <td>{{ person.email }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+    <thead class="">
+        <tr>
+        <th class="th-table2">Firstname</th>
+        <th class="th-table2">lastname</th>
+        <th class="th-table2">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of data" class="table-body">
+        <td>{{ person.firstname }}</td>
+        <td>{{ person.lastname }}</td>
+        <td>{{ person.email }}</td>
+        </tr>
+    </tbody>
+</table>
